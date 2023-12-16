@@ -5,3 +5,7 @@ const y = x.map((item) => {
     });
 
 console.log(y);
+
+
+const removeLastOfX = x.pop();
+console.log(x);
