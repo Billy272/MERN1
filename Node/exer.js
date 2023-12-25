@@ -28,3 +28,10 @@ console.log(me.data);
 
 //return object keys
 console.log(Object.keys(me));
+
+//adding  a new friend
+function addFriend(userObj, friend) {
+    userObj.data.friends.push(friend);
+    return userObj.data.friends;
+}
+console.log(addFriend(me, 'Bobby'));
