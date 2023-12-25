@@ -9,7 +9,8 @@ let me = {
             computer: 'coding',
             music: 'rap',
             sport: 'football'
-        }
+        },
+        friends: ['Trevor', 'Willy', 'Donald']
     }
 
 }
@@ -24,3 +25,6 @@ console.log(me.data);
 
 delete me.data.hobby.sport;
 console.log(me.data);
+
+//return object keys
+console.log(Object.keys(me));
