@@ -21,3 +21,6 @@ console.log(checkInventory('hobby'));
 
 me.data.hobby.fave_team = 'Chelsea';
 console.log(me.data);
+
+delete me.data.hobby.sport;
+console.log(me.data);
