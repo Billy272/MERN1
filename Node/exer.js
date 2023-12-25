@@ -13,5 +13,5 @@ let me = {
     }
 
 }
-
+me.data.hobby.fave_team = 'Chelsea';
 console.log(me.data);
