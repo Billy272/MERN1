@@ -15,8 +15,9 @@ let me = {
 }
 
 function checkInventory(scannedItem) {
-    return me.data.hobby[scannedItem];
+    return me.data[scannedItem];
 }
+console.log(checkInventory('hobby'));
 
 me.data.hobby.fave_team = 'Chelsea';
 console.log(me.data);
