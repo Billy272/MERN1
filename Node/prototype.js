@@ -16,3 +16,6 @@ for (let property in Zoe){
         prototypeProps.push(property);
     }
 }
+
+console.log(ownProps);
+console.log(prototypeProps);
