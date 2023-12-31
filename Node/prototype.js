@@ -27,4 +27,13 @@ Cat.prototype = {
     }
 }
 
-Zoe.sleep();
+
+function Lion() { }
+
+Lion.prototype = Object.create(Cat.prototype);
+Lion.prototype.constructor = Lion;
+
+let sironka = new Lion("Sironka", 40);
+console.log(sironka);
+sironka.sleep();
+
