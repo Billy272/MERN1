@@ -19,3 +19,12 @@ for (let property in Zoe){
 
 console.log(ownProps);
 console.log(prototypeProps);
+
+Cat.prototype = {
+    constructor: Cat,
+    sleep: function(){
+        console.log("Prrrrr");
+    }
+}
+
+Zoe.sleep();
