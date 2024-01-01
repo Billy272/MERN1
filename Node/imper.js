@@ -14,3 +14,16 @@ Browser.prototype.join = function(otherBrowser) {
     return this;
 }
 
+Browser.prototype.tabOpen = function(tab) {
+    this.tabs.push('http://www.' + tab + '.com');
+    return this;
+}
+
+Browser.prototype.tabClose = function(tab) {
+    if (this.tabs.indexOf(tab) !== -1) {
+        this.tabs.splice(this.tabs.indexOf(tab), 1);
+    } else {
+        console.log('Tab not found');
+    }
+}
+
