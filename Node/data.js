@@ -1,4 +1,4 @@
-//create a mini library with multiple data
+//creating a mini library with multiple data
 
 const movies = [
     {
