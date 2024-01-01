@@ -27,3 +27,16 @@ Browser.prototype.tabClose = function(tab) {
     }
 }
 
+Browser.prototype.openHistory = function(history) {
+    this.history.push(history);
+    return this;
+}
+
+Browser.prototype.closeHistory = function(history) {
+    if (this.history.indexOf(history)!== -1) {
+        this.history.splice(this.history.indexOf(history), 1)
+    }else{
+        console.log("History not found.");
+    }
+}
+
