@@ -38,3 +38,17 @@ const totalYears = movies.reduce(
     (total, movie) => total + parseInt(movie.Year), 0
     );
 console.log(totalYears);
+
+//adding a new movie to the list
+const newMovie = {
+    "Title":"The Lion King",
+    "Year":"2019",
+    "Rated":"PG",
+    "Released":"19 July 2019",
+    "Runtime":"118 min",
+    "Genre":"Animation, Adventure, Drama, Family, Musical",
+}
+
+movies.push(newMovie);
+
+console.log(movies);
