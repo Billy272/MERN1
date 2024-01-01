@@ -6,7 +6,11 @@ const Browser = function(tabs,history,bookmarks,extensions) {
     this.extensions = extensions;
 }
 
-Browser.prototype.join = function() {
-    this.tabs = this.tabs.concat();
+Browser.prototype.join = function(otherBrowser) {
+    this.tabs = this.tabs.concat(otherBrowser.tabs);
+    this.history = this.history.concat(otherBrowser.history);
+    this.bookmarks = this.bookmarks.concat(otherBrowser.bookmarks);
+    this.extensions = this.extensions.concat(otherBrowser.extensions);
     return this;
 }
+
