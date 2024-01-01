@@ -27,8 +27,8 @@ const movies = [
     }
 ]
 
-const filteredMovies = movies.filter((movie) => {
-    return movie.Year > 2012;
-})
+const filteredMovies = movies.filter(movie => movie.Year > 2014).map(
+    movie => ({title: movie["Title"], year: movie["Year"]})
+);
 
 console.log(filteredMovies);
