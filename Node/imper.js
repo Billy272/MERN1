@@ -63,3 +63,5 @@ const chrome = new Browser(['http://www.google.com', 'http://www.facebook.com'],
                  ['http://www.youtube.com'],
                   ['http://www.github.com'],
                    ['http://www.wakatime.com']);
+
+const brave = new Browser(['http://www.twitter.com', 'http://www.instagram.com']);
