@@ -40,3 +40,26 @@ Browser.prototype.closeHistory = function(history) {
     }
 }
 
+Browser.prototype.addBookmark = function(bookmark) {
+    this.bookmarks.push(bookmark);
+    return this;
+}
+
+Browser.prototype.removeBookmark = function(bookmark) {
+    if (this.bookmarks.indexOf(bookmark) !== -1) {
+        this.bookmarks.splice(this.bookmarks.indexOf(bookmark), 1);
+    }else{
+        console.log("Bookmark not found.");
+    }
+}
+
+Browser.prototype.availableExtensions = function(extension) {
+    this.extensions.push(extension);
+    return this;
+}
+
+
+const chrome = new Browser(['http://www.google.com', 'http://www.facebook.com'],
+                 ['http://www.youtube.com'],
+                  ['http://www.github.com'],
+                   ['http://www.wakatime.com']);
