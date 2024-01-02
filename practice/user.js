@@ -11,3 +11,11 @@ if (!isNaN(userAge)){
 } else {
     console.log("Invalid input");
 }
+//sorting values before using concat
+const numArray = [4, 5, 2, 1, 6, 3];
+
+function sortedArray() {
+    return [].concat(numArray).sort();
+}
+
+console.log(sortedArray());
