@@ -34,10 +34,13 @@ const filteredMovies = movies.filter(movie => movie.Year > 2014).map(
 console.log(filteredMovies);
 
 //using reducing method on movies
-const totalYears = movies.reduce(
-    (total, movie) => total + parseInt(movie.Year), 0
-    );
-console.log(totalYears);
+function getRating(movies){
+    let averageRating;
+    let totalRating = movies.reduce((sum, movie) => sum + parseFloat(movie.imdbRating), 0);
+    averageRating = totalRating/movies.length;
+    return averageRating;
+    
+}
 
 //adding a new movie to the list
 const newMovie = {
