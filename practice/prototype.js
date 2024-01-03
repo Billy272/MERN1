@@ -37,3 +37,12 @@ let sironka = new Lion("Sironka", 40);
 console.log(sironka);
 sironka.sleep();
 
+//create a method to check that every element in an array meets the criteria
+
+function checkPositive(arr) {
+    return arr.every(function(currentValue){
+        return currentValue > 0;
+    });
+}   
+
+console.log(checkPositive([1, 2, 3, -3, 5]));
