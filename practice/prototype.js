@@ -46,3 +46,4 @@ function checkPositive(arr) {
 }   
 
 console.log(checkPositive([1, 2, 3, -3, 5]));
+

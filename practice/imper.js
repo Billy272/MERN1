@@ -65,3 +65,6 @@ const chrome = new Browser(['http://www.google.com', 'http://www.facebook.com'],
                    ['http://www.wakatime.com']);
 
 const brave = new Browser(['http://www.twitter.com', 'http://www.instagram.com']);
+
+chrome.join(brave);
+console.log(chrome);
