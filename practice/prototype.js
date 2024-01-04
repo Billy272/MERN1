@@ -47,3 +47,11 @@ function checkPositive(arr) {
 
 console.log(checkPositive([1, 2, 3, -3, 5]));
 
+//currying and partial application
+function add(x){
+    return function(y){
+        return function(z){
+            return x + y + z;
+        }
+    }
+}
