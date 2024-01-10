@@ -1,0 +1,2 @@
+require('./iife')
+require('./add')
