@@ -1,9 +1,9 @@
-(function(){
+(function(message){
     const name = 'Billy';
-    console.log(name);
-})();
+    console.log(message,name);
+})("Hey");
 
-(function(){
+(function(message){
     const age = 21;
-    console.log(age);
-})();
+    console.log(message, age);
+})("You are");
