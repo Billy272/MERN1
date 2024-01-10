@@ -1,12 +1,8 @@
-const add = (a, b) => {
+module.exports.add = (a, b) => {
     return a + b;
 }
 
-const multiply = (a, b) => {
+module.exports.multiply = (a, b) => {
     return a * b;
 }
 
-module.exports ={
-    add , 
-    multiply 
-};
