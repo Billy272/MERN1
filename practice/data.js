@@ -22,7 +22,7 @@ const movies = [
         "Year":"2018",
         "Rated":"PG-13",
         "Released":"16 Feb 2018",
-        "Runtime":"134 min",
+        "Runtime":"138 min",
         "Genre":"Action, Adventure, Sci-Fi",
     }
 ]
