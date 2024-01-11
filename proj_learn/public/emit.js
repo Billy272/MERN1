@@ -7,4 +7,4 @@ emmiter.on("Order food", (quantity, size)=> {
     console.log(`Order accepted of ${quantity} pieces,the size is ${size}. Food on delivery`);
 });
 
-emmiter.emit("Order burger", 4, "large");
+emmiter.emit("Order food", 4, "large");
