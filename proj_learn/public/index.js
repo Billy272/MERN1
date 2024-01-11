@@ -59,3 +59,5 @@ const emmiter  = new EventEmmiter();
 emmiter.on("Order food", ()=> {
     console.log("Order accepted, food on delivery");
 });
+
+emmiter.emit("Order burger", 4, "large");
