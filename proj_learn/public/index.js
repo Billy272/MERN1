@@ -43,3 +43,14 @@ function greet(name){
 }
 
 greet("Billy");
+//callback function on greet
+function salute(greetName){
+    const name = "Delhi";
+    greetName(name);
+}
+
+salute(greet);
+
+//use of emitter
+const EventEmmiter = require("node:events");
+
