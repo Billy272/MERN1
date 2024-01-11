@@ -56,8 +56,6 @@ const EventEmmiter = require("node:events");
 
 const emmiter  = new EventEmmiter();
 
-emmiter.emit("greet");
-
-emmiter.on("greet", ()=> {
-    console.log("Hello there");
+emmiter.on("Order food", ()=> {
+    console.log("Order accepted, food on delivery");
 });
