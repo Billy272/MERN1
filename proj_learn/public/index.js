@@ -54,3 +54,10 @@ salute(greet);
 //use of emitter
 const EventEmmiter = require("node:events");
 
+const emmiter  = new EventEmmiter();
+
+emmiter.emit("greet");
+
+emmiter.on("greet", ()=> {
+    console.log("Hello there");
+});
