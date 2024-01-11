@@ -9,3 +9,7 @@ const guy = require('./app');
 const you = new guy("Willy", 21);
 console.log(you.getName());
 console.log(you.getAge());
+
+//importing json files
+const data = require("./data.json");
+console.log(data);
