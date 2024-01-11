@@ -13,4 +13,4 @@ console.log(you.getAge());
 //importing json files
 const data = require("./data.json");
 console.log(data);
-console.log(data.description);
+console.log("The main version is",data.version);
