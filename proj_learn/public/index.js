@@ -32,3 +32,6 @@ console.log(path.format(path.parse(__filename)));
 
 //Absolute path
 console.log(path.isAbsolute(__filename));
+
+//joins paths
+console.log(path.join(__dirname, "test", "hello.html"));
