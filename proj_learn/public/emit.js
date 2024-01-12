@@ -2,6 +2,10 @@ const food_shop = require("./food_shop");
 
 const ordered = new food_shop();
 
+ordered.on("Order food", (quantity, size) => {
+    console.log(`Order accepted of ${quantity} pieces,the size is ${size}. Food on delivery`);
+});
+
 ordered.order();
 ordered.displayOrder();
 //use of emitter

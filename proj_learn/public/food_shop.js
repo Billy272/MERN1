@@ -8,6 +8,7 @@ class food_shop extends EventEmmiter {
     }
     order(){
         this.order++;
+        this.emit("Order food", quantity, size);
     }
 
     displayOrder() {
