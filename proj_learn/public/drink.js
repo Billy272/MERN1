@@ -5,3 +5,5 @@ class DrinkOrder {
         }
     }
 }
+
+module.exports = DrinkOrder;

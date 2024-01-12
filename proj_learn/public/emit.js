@@ -1,6 +1,8 @@
 const food_shop = require("./food_shop");
+const DrinkOrder = require("./drink");
 
 const ordered = new food_shop();
+const drink = new DrinkOrder();
 
 ordered.on("Order food", (quantity, size) => {
     console.log(`Order accepted of ${quantity} pieces,the size is ${size}. Food on delivery`);
