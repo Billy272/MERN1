@@ -51,4 +51,5 @@ function salute(greetName){
 
 salute(greet);
 
-
+//creating a buffer that holds a buffer
+const buf = new Buffer.from("Hello");
