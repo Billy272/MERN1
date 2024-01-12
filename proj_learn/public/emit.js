@@ -13,7 +13,7 @@ emmiter.on("Order food", (size) => {
     } else if (size === "medium"){
         console.log("You get a free drink.");
     } else {
-        console.log("Thanks from buying from us.");
+        console.log("Thank you from buying from us.");
     }
 })
 
