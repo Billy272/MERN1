@@ -8,9 +8,9 @@ emmiter.on("Order food", (quantity, size)=> {
 });
 
 emmiter.on("Order food", (size) => {
-    if(size == "large"){
+    if(size === "large"){
         console.log("You get a free drink and an extra burger.");
-    } else if (size == "medium"){
+    } else if (size === "medium"){
         console.log("You get a free drink.");
     } else {
         console.log("Thanks from buying from us.");
