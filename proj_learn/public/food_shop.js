@@ -1,5 +1,9 @@
-class food_shop  {
+const EventEmmiter = require("node:events")
+
+
+class food_shop extends EventEmmiter {
     constructor() {
+        super();
         this.order = 0;
     }
     order(){
