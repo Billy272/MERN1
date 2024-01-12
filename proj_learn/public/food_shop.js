@@ -1,4 +1,4 @@
-class food_shop extends EventEmmiter {
+class food_shop  {
     constructor() {
         this.order = 0;
     }
@@ -7,7 +7,7 @@ class food_shop extends EventEmmiter {
     }
 
     displayOrder() {
-        console.log(`You have ordered ${this.order}`);
+        console.log(`You have ordered: ${this.order}`);
     }
 }
 
