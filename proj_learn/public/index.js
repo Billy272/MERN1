@@ -54,5 +54,6 @@ salute(greet);
 //creating a buffer that holds a buffer
 const buf = new Buffer.from("Hello");
 
+buf.write("World");
 console.log(buf);
 console.log(buf.toJSON());
