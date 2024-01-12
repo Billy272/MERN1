@@ -6,7 +6,7 @@ ordered.on("Order food", (quantity, size) => {
     console.log(`Order accepted of ${quantity} pieces,the size is ${size}. Food on delivery`);
 });
 
-ordered.order();
+ordered.order(2, "medium");
 ordered.displayOrder();
 //use of emitter
 // const EventEmmiter = require("node:events");
