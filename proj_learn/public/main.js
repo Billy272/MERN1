@@ -48,3 +48,13 @@ fs.writeFile("./code.txt", "Did I just format a file unknowingly. It's kinda fun
         console.log("File written successfully");
     }
 })
+
+
+const readStream = fs.createReadStream("./file.txt", {encoding: "utf-8", highWaterMark: 2});
+
+const writeStream = fs.createWriteStream("./file2.txt");
+
+readStream.on("data", (chunk) => {
+    console.log(chunk);
+    writeStream.write(chunk);
+}) 
