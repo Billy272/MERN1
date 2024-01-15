@@ -49,12 +49,21 @@ fs.writeFile("./code.txt", "Did I just format a file unknowingly. It's kinda fun
     }
 })
 
+const fs = require("node:fs");
+const zlib = require("node:zlib");
 
-const readStream = fs.createReadStream("./file.txt", {encoding: "utf-8", highWaterMark: 2});
+const readStream = fs.createReadStream("./file.txt", {encoding: "utf-8"});
+
+//using pipe to read and write files
+readStream.pipe(zlib.gzip).pipe(fs.WriteStream("./file2.txt.gz"));
 
 const writeStream = fs.createWriteStream("./file2.txt");
+
+readStream.pipe(writeStream);
 
 readStream.on("data", (chunk) => {
     console.log(chunk);
     writeStream.write(chunk);
 }) 
+
+
