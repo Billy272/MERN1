@@ -8,8 +8,8 @@ const server = http.createServer((req, res) => {
         location: "Nairobi"
     };
 
-    res.writeHead(200, {"Content-Type": "application/json"}); //Always specify the content type
-    res.end(JSON.stringify(me));
+    res.writeHead(200, {"Content-Type": "text/html"}); //Always specify the content type
+    res.end("<h1>Coding is fun.</h1>");
 });
 
 server.listen(3000, () => {

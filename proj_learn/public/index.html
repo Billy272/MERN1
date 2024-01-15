@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title>Learning Node</title>
+        <link rel="stylesheet" href="./app.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Learning Node</h1>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <form action="/contact" method="POST">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
