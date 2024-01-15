@@ -23,3 +23,10 @@ console.log("This proves that JS is asynchronous");
 
 //writing functions to read and write files
 fs.writeFileSync("./code.txt", "Did I just format a file unknowingly. It's kinda funny.");
+fs.writeFile("./code.txt", "Did I just format a file unknowingly. It's kinda funny.", (error) => {
+    if(error){
+        console.log(error);
+    } else {
+        console.log("File written successfully");
+    }
+})
