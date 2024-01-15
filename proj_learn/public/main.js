@@ -1,6 +1,24 @@
+const fs = require("node:fs/promises");
+
+async function readFile(){
+    try{
+        const data = await fs.readFile("./file.txt", "utf-8");
+        console.log(data);
+    } catch(error){
+        console.log(error);
+    }
+}
+
+readFile();
+
+fs.readFile("./file.txt", "utf-8")
+.then((data) => console.log(data))
+.catch((error) => console.log(error));
+
+console.log("This proves that JS is asynchronous");
+
 //dealing with fs module
 const fs = require("node:fs");
-
 console.log("First statement");
 const fileContent = fs.readFileSync("./file.txt", "utf-8");
 
