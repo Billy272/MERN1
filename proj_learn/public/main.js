@@ -20,3 +20,6 @@ console.log("This proves that JS is asynchronous");
 //This whole process above proves that an applicaton cannot lag 
 //when many users are using it at the same time.
 //The process asynchronusly handles the requests of the users.
+
+//writing functions to read and write files
+fs.writeFileSync("./code.txt", "Did I just format a file unknowingly. It's kinda funny.");
