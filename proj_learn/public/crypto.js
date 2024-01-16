@@ -1,0 +1,5 @@
+const crypto = require('node:crypto');
+
+const start = Date.now();
+crypto.pbkdf2("password","salt",100000, 512, "sha512");
+console.log("Hash: ", Date.now() - start);
