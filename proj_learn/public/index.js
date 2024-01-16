@@ -1,4 +1,3 @@
-
 const http = require('node:http');
 const fs = require('node:fs');
 
@@ -32,7 +31,7 @@ const server = http.createServer((req, res) => {
         };
         res.end(JSON.stringify(data));
     } else {
-        res.writeHead(404);
+        res.writeHead(404, {"Content-Type": "text/plain" });
         res.end("Page not found.");
     }
 });
