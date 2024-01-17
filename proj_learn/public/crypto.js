@@ -1,5 +1,6 @@
 const crypto = require('node:crypto');
 
+process.env.UV_THREADPOOL_SIZE = 5;
 const MAX_CALLS = 10;
 
 const start = Date.now();
