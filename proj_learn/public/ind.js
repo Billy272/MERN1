@@ -50,16 +50,11 @@ fs.readFile(__filename, () => {
     Promise.resolve().then(() => {
         console.log("Promise resolved inside reading file");
     })
+    process.nextTick(() => {
+        console.log("Next tick inside reading file");
+    })
+    setTimeout(() =>
+        console.log("Set timeout inside reading file")
+    );
+    for (let i = 0; i < 2000000; i++){}
 });
-
-process.nextTick(() => {
-    console.log("Next tick after reading file");
-})
-
-setTimeout(() =>
-    console.log("Set timeout after reading file")
-);
-
-for (let i = 0; i < 2000000; i++){}
-
-//Check queue
