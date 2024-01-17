@@ -1,3 +1,5 @@
+//This code is for learning purpose only on Event loop in Node.js
+
 setTimeout(() =>
     console.log("This is set timeout 1")
 , 1000);
@@ -58,3 +60,11 @@ fs.readFile(__filename, () => {
     );
     for (let i = 0; i < 2000000; i++){}
 });
+
+setTimeout(() => 
+    console.log("Last set timeout"), 0
+);
+setImmediate(() => {
+    console.log("Last set immediate");
+})
+for (let i = 0; i < 2000000; i++){}
