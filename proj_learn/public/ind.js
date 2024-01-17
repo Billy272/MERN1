@@ -1,9 +1,12 @@
 setTimeout(() =>
     console.log("This is set timeout 1")
 , 0);
-setTimeout(() => 
-    console.log("This is set timeout 2")
-, 0);
+setTimeout(() => {
+    console.log("This is set timeout 2");
+    setTimeout(() => 
+        console.log("This is set timeout inside another timeout")
+    );
+}, 0);
 setTimeout(() => 
     console.log("This is set timeout 3")
 , 0);
