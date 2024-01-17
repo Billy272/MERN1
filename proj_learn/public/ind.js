@@ -35,31 +35,31 @@
 //     })
 // })
 
-Promise.resolve().then(() => {
-    console.log("Promise resolved 3");
-})
+// Promise.resolve().then(() => {
+//     console.log("Promise resolved 3");
+// })
 
 //I/O queue
 const fs = require("node:fs");
 
 fs.readFile(__filename, () => {
     console.log("I/O 1");
+    setImmediate(() => {
+        console.log("Set immediately inside the reading file");
+    })
+    Promise.resolve().then(() => {
+        console.log("Promise resolved inside reading file");
+    })
 });
 
 process.nextTick(() => {
     console.log("Next tick after reading file");
 })
 
-Promise.resolve().then(() => {
-    console.log("Promise resolved after reading file");
-})
-
 setTimeout(() =>
     console.log("Set timeout after reading file")
 );
 
-setImmediate(() => {
-    console.log("Set immediate after reading file");
-})
-
 for (let i = 0; i < 2000000; i++){}
+
+//Check queue
