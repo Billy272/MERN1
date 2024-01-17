@@ -11,3 +11,13 @@ for (let i = 0; i < MAX_CALLS; i++) {
         });
     }).end();
 }
+
+//use of nextTick
+process.nextTick(() => {
+    console.log("Next tick");
+})
+
+//use of promise queue
+Promise.resolve().then(() => {
+    console.log("Promise resolved");
+});
