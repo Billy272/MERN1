@@ -1,3 +1,12 @@
+setTimeout(() =>
+    console.log("This is set timeout 1")
+, 0);
+setTimeout(() => 
+    console.log("This is set timeout 2")
+, 0);
+setTimeout(() => 
+    console.log("This is set timeout 3")
+, 0);
 
 process.nextTick(() => {
     console.log("This is Next tick 1");
@@ -26,3 +35,4 @@ Promise.resolve().then(() => {
 Promise.resolve().then(() => {
     console.log("Promise resolved 3");
 })
+
