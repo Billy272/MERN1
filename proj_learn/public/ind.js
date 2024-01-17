@@ -39,3 +39,23 @@ Promise.resolve().then(() => {
     console.log("Promise resolved 3");
 })
 
+//I/O queue
+const fs = require("node:fs");
+
+fs.readFile(__filename, () => {
+    console.log("I/O 1");
+});
+
+process.nextTick(() => {
+    console.log("Next tick after reading file");
+})
+
+Promise.resolve().then(() => {
+    console.log("Promise resolved after reading file");
+})
+
+setTimeout(() =>
+    console.log("Set timeout after reading file")
+);
+
+for (let i = 0; i < 2000000; i++){}
