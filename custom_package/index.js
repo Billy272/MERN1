@@ -1,9 +1,8 @@
-
-import { upperCase } from "upper-case";
+const upperCase = require("upper-case").upperCase;
 
 function greet(name){
-    console.log(upperCase(`Hello ${name}, welcome to Node.js!`));
+    console.log(`Hello ${name}, welcome to Node.js!`);
 }
 
-greet("Billy");
-export default greet;
+greet(upperCase("Billy"));
+module.exports = greet;
