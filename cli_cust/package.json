@@ -9,7 +9,12 @@
   "bin": {
     "codingpokemon": "./index.js"
   },
-  "keywords": ["CLI"],
+  "keywords": [
+    "CLI"
+  ],
   "author": "Billy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
 }

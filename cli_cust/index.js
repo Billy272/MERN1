@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-console.log(process.argv)
+const yargs = require("yargs");
+const { argv } = yargs(process.argv);
 
 const printMoves = async (pokemonName) => {
     const response = await fetch(
@@ -11,4 +12,4 @@ const printMoves = async (pokemonName) => {
     console.log(moves.slice(0, 5));
 };
 
-printMoves("pikachu");
+printMoves(argv.pokemon);
