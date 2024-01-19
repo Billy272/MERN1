@@ -13,3 +13,7 @@ const server = http.createServer((req, res) => {
         res.end(`Welcome to the slow page ${j}`);
     }
 })
+
+server.listen(8000, () => {
+    console.log("Server is on port 8000");
+})
