@@ -1,5 +1,8 @@
 const cluster = require('node:cluster');
 const http = require('node:http');
+const OS = require('node:os');
+
+console.log(OS.cpus().length);
 
 if(cluster.isMaster){
     console.log(`Master ${process.pid} is running.`);
