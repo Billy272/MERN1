@@ -4,7 +4,7 @@
 // const { argv } = yargs(process.argv);
 
 const inquirer = require("inquirer");
-const { type } = require("os");
+const fetch = require("node-fetch");
 
 
 const printMoves = async (pokemonName) => {
