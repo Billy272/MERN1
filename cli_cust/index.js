@@ -5,7 +5,7 @@ const { argv } = yargs(process.argv);
 
 const printMoves = async (pokemonName) => {
     const response = await fetch(
-        `https://pokeapi.com/api/v2/pokemon/${pokemonName}`
+        `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
     );
     const pokemon = await response.json();
     const moves = pokemon.moves.map(({ move })=> move.name);
